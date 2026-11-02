@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arafat Rahman</title>
+<meta name="description" content="Arafat Rahman: Lecturer, Institute of Natural Sciences, United International University. Computational condensed matter physics: altermagnets, topological materials, superconductivity and first-principles materials design.">
+<meta name="author" content="Arafat Rahman">
+<meta property="og:title" content="Arafat Rahman | Computational Condensed Matter Physics">
+<meta property="og:description" content="Lecturer, Institute of Natural Sciences, United International University. Research on altermagnets, topological materials and superconductivity from first principles.">
+<meta property="og:image" content="assets/arafat-rahman.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23173a5e'/><text x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'>AR</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --ink:#1c2430; --muted:#5b6675; --faint:#8a94a3;
+  --line:#e4e1da; --accent:#173a5e; --accent-2:#2f6690; --accent-soft:#eaf0f6; --gold:#9a6b1f;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#11161d; --surface:#171e27; --ink:#e6e9ee; --muted:#a3adba; --faint:#7d8896;
+    --line:#2a3340; --accent:#8fb8de; --accent-2:#a9c9e8; --accent-soft:#1c2836; --gold:#d6a85a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#11161d; --surface:#171e27; --ink:#e6e9ee; --muted:#a3adba; --faint:#7d8896;
+  --line:#2a3340; --accent:#8fb8de; --accent-2:#a9c9e8; --accent-soft:#1c2836; --gold:#d6a85a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent-2);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s,color .15s}
+a:hover{border-bottom-color:currentColor}
+sub{font-size:.72em;line-height:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font-family:var(--serif);font-weight:700;font-size:19px;color:var(--ink);letter-spacing:.2px;border:0;white-space:nowrap}
+.brand:hover{border:0}
+nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;font-family:var(--sans);font-size:14px;font-weight:500}
+nav a{color:var(--muted);border:0}
+nav a:hover,nav a.active{color:var(--accent);border:0}
+.theme-btn{background:none;border:1px solid var(--line);color:var(--muted);border-radius:8px;width:34px;height:34px;cursor:pointer;display:grid;place-items:center;flex:none}
+.theme-btn:hover{color:var(--accent);border-color:var(--accent)}
+.menu-btn{display:none}
+
+/* hero */
+.hero{padding:64px 0 48px;border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:220px 1fr;gap:48px;align-items:start}
+.portrait{width:220px;height:275px;border-radius:6px;object-fit:cover;object-position:50% 20%;box-shadow:0 1px 2px rgba(0,0,0,.06),0 12px 32px -12px rgba(23,58,94,.35)}
+.hero h1{font-size:44px;line-height:1.1;margin:4px 0 10px;font-weight:700;letter-spacing:-.5px}
+.role{font-family:var(--sans);font-size:16px;color:var(--ink);margin:0 0 2px;font-weight:500}
+.affil{font-family:var(--sans);font-size:15px;color:var(--muted);margin:0 0 20px}
+.tagline{font-size:20px;color:var(--muted);font-style:italic;margin:0 0 24px;max-width:640px}
+.links{display:flex;flex-wrap:wrap;gap:10px;font-family:var(--sans);font-size:14px}
+.links a{display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid var(--line);border-radius:999px;color:var(--ink);background:var(--surface)}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+.links svg{width:15px;height:15px;flex:none}
+
+/* sections */
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+.section-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px}
+.section-head h2{font-size:30px;margin:0;font-weight:700;letter-spacing:-.3px}
+.section-head .kicker{font-family:var(--sans);font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold);font-weight:600}
+.prose p{margin:0 0 16px;max-width:760px}
+.prose p:last-child{margin-bottom:0}
+
+/* vision */
+.vision-quote{border-left:3px solid var(--accent);padding:4px 0 4px 22px;margin:0 0 30px;font-size:22px;line-height:1.5;font-style:italic;color:var(--ink);max-width:760px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pillar{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:22px}
+.pillar .num{font-family:var(--sans);font-size:12px;font-weight:600;color:var(--gold);letter-spacing:1.2px}
+.pillar h3{font-size:19px;margin:6px 0 8px;line-height:1.3}
+.pillar p{margin:0;font-size:16px;color:var(--muted);line-height:1.6}
+
+/* research */
+.areas{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.area{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:22px 22px 20px;position:relative}
+.area h3{font-size:19px;margin:0 0 8px;line-height:1.3;color:var(--accent)}
+.area p{margin:0;font-size:16px;color:var(--muted);line-height:1.6}
+.area.wide{grid-column:1 / -1}
+.methods{margin-top:28px;padding:20px 22px;background:var(--accent-soft);border-radius:8px}
+.methods h3{font-family:var(--sans);font-size:13px;letter-spacing:1.2px;text-transform:uppercase;margin:0 0 12px;color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;font-family:var(--sans);font-size:13.5px}
+.chips span{background:var(--surface);border:1px solid var(--line);padding:4px 11px;border-radius:6px;color:var(--ink)}
+
+/* publications */
+.pub-meta{font-family:var(--sans);font-size:14px;color:var(--muted);margin:-12px 0 24px}
+.pub-group{font-family:var(--sans);font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:var(--faint);font-weight:600;margin:34px 0 4px}
+.pub-group:first-of-type{margin-top:0}
+ol.pubs{list-style:none;margin:0;padding:0;counter-reset:pub}
+ol.pubs li{display:grid;grid-template-columns:44px 1fr;gap:6px;padding:18px 0;border-bottom:1px solid var(--line)}
+ol.pubs li:last-child{border-bottom:0}
+ol.pubs li::before{counter-increment:pub;content:"[" counter(pub) "]";font-family:var(--sans);font-size:14px;color:var(--faint);padding-top:3px}
+.pub-title{font-size:18px;font-weight:600;line-height:1.4;margin:0 0 4px;color:var(--ink)}
+.pub-title a{color:var(--ink)}
+.pub-title a:hover{color:var(--accent-2)}
+.pub-authors{font-size:16px;color:var(--muted);margin:0 0 3px}
+.pub-authors .me{color:var(--ink);font-weight:600}
+.pub-venue{font-size:16px;margin:0 0 8px}
+.pub-venue em{color:var(--ink)}
+.pub-venue .yr{color:var(--muted)}
+.pub-actions{display:flex;flex-wrap:wrap;gap:8px;font-family:var(--sans);font-size:12.5px}
+.pub-actions a,.pub-actions span{padding:2px 9px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+.pub-actions a:hover{border-color:var(--accent-2);color:var(--accent-2)}
+.pub-actions .note{border-color:color-mix(in srgb,var(--gold) 45%,transparent);color:var(--gold)}
+
+/* timeline */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.two-col h3.col-title{font-family:var(--sans);font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:var(--faint);font-weight:600;margin:0 0 14px}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{padding:0 0 22px 22px;border-left:2px solid var(--line);position:relative}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--accent-2)}
+.timeline .when{font-family:var(--sans);font-size:13px;color:var(--faint);font-weight:500}
+.timeline .what{font-weight:600;font-size:18px;line-height:1.35;margin:2px 0}
+.timeline .where{color:var(--muted);font-size:16px}
+.timeline .detail{color:var(--muted);font-size:15.5px;margin-top:6px}
+
+/* teaching */
+.teach{max-width:760px}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:start}
+.contact-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px;font-family:var(--sans);font-size:15px}
+.contact-card dl{margin:0;display:grid;grid-template-columns:92px 1fr;row-gap:12px;column-gap:12px}
+.contact-card dt{color:var(--faint);font-weight:500}
+.contact-card dd{margin:0;color:var(--ink);overflow-wrap:anywhere}
+
+footer{padding:28px 0 40px;font-family:var(--sans);font-size:13px;color:var(--faint);border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* responsive */
+@media (max-width:900px){
+  .pillars{grid-template-columns:1fr}
+  .two-col,.contact-grid{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:760px){
+  body{font-size:17px}
+  .wrap{padding:0 16px}
+  nav ul{display:none;position:absolute;top:60px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:6px 0}
+  nav ul.open{display:flex}
+  nav li a{display:block;padding:11px 16px}
+  .menu-btn{display:grid}
+  .hero{padding:40px 0 36px}
+  .hero .wrap{grid-template-columns:1fr;gap:24px}
+  .portrait{width:144px;height:180px}
+  .hero h1{font-size:34px}
+  .tagline{font-size:18px}
+  .areas{grid-template-columns:1fr}
+  section{padding:44px 0}
+  .section-head h2{font-size:26px}
+  .vision-quote{font-size:19px;padding-left:16px}
+  ol.pubs li{grid-template-columns:1fr;gap:2px}
+  ol.pubs li::before{padding:0}
+}
+@media print{
+  header.nav,.theme-btn{display:none}
+  body{background:#fff;color:#000}
+  section{padding:24px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Arafat Rahman</a>
+    <nav aria-label="Primary">
+      <ul id="navlist">
+        <li><a href="#about">About</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;gap:8px">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="theme-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navlist">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <img class="portrait" src="assets/arafat-rahman.jpg" alt="Portrait of Arafat Rahman" width="220" height="275">
+    <div>
+      <h1>Arafat Rahman</h1>
+      <p class="role">Lecturer in Physics</p>
+      <p class="affil">Institute of Natural Sciences, United International University, Dhaka, Bangladesh</p>
+      <p class="tagline">Condensed Matter Physicist</p>
+      <div class="links">
+        <a href="mailto:arafatrahman@ins.uiu.ac.bd">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=9EncQKUAAAAJ" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zm-6.8 9.9V16c0 1.9 3 3.5 6.8 3.5s6.8-1.6 6.8-3.5v-3.1L12 16.6l-6.8-3.7z"/></svg>Google Scholar</a>
+        <a href="#publications">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>Publications</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">About</span><h2>Biography</h2></div>
+    <div class="prose">
+      <p>I am a Lecturer at the <strong>Institute of Natural Sciences, United International University (UIU)</strong> in Dhaka, Bangladesh. I work in computational and theoretical condensed matter physics, using first-principles methods to understand and predict the behaviour of quantum materials.</p>
+      <p>My current research centres on <strong>altermagnets</strong>, a recently identified class of magnetic materials that combine zero net magnetisation with spin-split electronic bands, and on how their magnons and electronic topology can be harnessed for spintronics. More broadly, I study topological materials, conventional and unconventional superconductivity, half-metallic magnets and functional perovskites for energy and optoelectronic applications. Group theory and crystal symmetry run through all of this work: I use them to classify electronic and magnetic states, explain band degeneracies and topological features, and decide which materials are worth computing in the first place.</p>
+      <p>I received my Bachelor of Science in Physics from the <strong>University of Dhaka</strong>, where I am also completing my Master's degree in Physics. Before joining UIU, I was a Teaching Assistant at <strong>BRAC University</strong> and then a Research Assistant in the Department of Mathematics and Natural Sciences at <strong>North South University</strong>, where I carried out density functional theory research, set up the group's high-performance computational workflow, and trained junior researchers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VISION -->
+<section id="vision">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Vision</span><h2>Research Vision</h2></div>
+    <blockquote class="vision-quote">My goal is to connect symmetry, magnetism and topology in real materials, and to turn theoretical insight into concrete predictions that experimentalists can test and engineers can use.</blockquote>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="num">01</div>
+        <h3>Altermagnetism and magnon physics</h3>
+        <p>Build a predictive understanding of altermagnets, including their spin-split bands, chiral magnons and Weyl states, and identify room-temperature candidates for low-power, high-speed spintronic devices.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">02</div>
+        <h3>Topology meets superconductivity</h3>
+        <p>Search for materials where nontrivial band topology and superconductivity coexist, and understand how strain, doping and pressure can tune them, toward platforms relevant to quantum technologies.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">03</div>
+        <h3>Computational physics in Bangladesh</h3>
+        <p>Grow a strong first-principles research culture locally: training students in modern electronic structure methods, building open and reproducible workflows, and collaborating internationally.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Research</span><h2>Research Interests</h2></div>
+    <div class="areas">
+      <div class="area">
+        <h3>Altermagnets and magnetic quantum materials</h3>
+        <p>Exchange-driven spin splitting, chiral magnons and topological Weyl states in metallic altermagnets; spin-wave dispersions and exchange interactions from first principles.</p>
+      </div>
+      <div class="area">
+        <h3>Topological materials</h3>
+        <p>Band topology, Weyl and Dirac semimetals, surface states and Berry-curvature-driven responses, studied with Wannier-based tight-binding models.</p>
+      </div>
+      <div class="area">
+        <h3>Superconductivity</h3>
+        <p>Electron–phonon superconductivity in semimetals and layered compounds, and strain as a route to higher critical temperatures.</p>
+      </div>
+      <div class="area">
+        <h3>Spintronics and spin-caloritronics</h3>
+        <p>Half-metallic ferromagnets, spin-polarised transport and lattice thermal transport for spin-caloritronic applications.</p>
+      </div>
+      <div class="area">
+        <h3>Functional perovskites for energy</h3>
+        <p>Halide, chalcogenide and hydride perovskites for photovoltaics, optoelectronics and solid-state hydrogen storage, linking DFT predictions to device-level simulation.</p>
+      </div>
+      <div class="area">
+        <h3>Lattice dynamics and anharmonicity</h3>
+        <p>Phonons, anharmonic lattice dynamics and thermal conductivity, and their role in stability, transport and superconductivity.</p>
+      </div>
+      <div class="area wide">
+        <h3>Group theory in solid state physics</h3>
+        <p>Space-group, magnetic-group and spin-group symmetry analysis of crystals: symmetry-protected band degeneracies, selection rules, and the symmetry origin of spin splitting in altermagnets and of topological states.</p>
+      </div>
+    </div>
+    <div class="methods">
+      <h3>Methods and tools</h3>
+      <div class="chips">
+        <span>Density functional theory</span><span>Group theory &amp; symmetry analysis</span><span>VASP</span><span>Quantum ESPRESSO</span><span>Wannier90</span><span>WannierTools</span><span>EPW</span><span>ALAMODE</span><span>SpinW</span><span>TB2J</span><span>Python</span><span>C++</span><span>HPC / Linux clusters</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Publications</span><h2>Selected Publications</h2></div>
+    <p class="pub-meta">A current list with citation counts is on <a href="https://scholar.google.com/citations?hl=en&amp;user=9EncQKUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>. <sup>†</sup> marks equal first-author contribution.</p>
+
+    <div class="pub-group">Journal articles</div>
+    <ol class="pubs">
+      <li><div>
+        <p class="pub-title"><a href="https://doi.org/10.1039/d6ta02419j" target="_blank" rel="noopener">Ultra-low lattice thermal conductivity in half-metallic RaFeX<sub>3</sub> (X = Cl, Br, I) perovskites: anharmonic lattice dynamics for efficient spin-caloritronics</a></p>
+        <p class="pub-authors">Md. Farhan Hassan<sup>†</sup>, <span class="me">Arafat Rahman<sup>†</sup></span>, Shaher Azad, Maruf Md Paramanik, Suptajoy Barua, Md. Kamruzzaman</p>
+        <p class="pub-venue"><em>Journal of Materials Chemistry A</em> <span class="yr">(2026)</span></p>
+        <div class="pub-actions"><a href="https://doi.org/10.1039/d6ta02419j" target="_blank" rel="noopener">DOI</a></div>
+      </div></li>
+      <li><div>
+        <p class="pub-title"><a href="https://doi.org/10.1016/j.jacomc.2026.100215" target="_blank" rel="noopener">Hydrogen storage potential of A<sub>2</sub>NiH<sub>6</sub> (A = Li, Na, K) double perovskite hydrides toward future energy applications: a first-principles study</a></p>
+        <p class="pub-authors">Shahriar Hoque, <span class="me">Arafat Rahman</span>, Maruf Md Rabbani Paramanik, Suptajoy Barua, Md. Salim Hossain, Shaher Azad, Md. Kamruzzaman</p>
+        <p class="pub-venue"><em>Journal of Alloys and Compounds Communications</em> <span class="yr">(2026)</span></p>
+        <div class="pub-actions"><a href="https://doi.org/10.1016/j.jacomc.2026.100215" target="_blank" rel="noopener">DOI</a></div>
+      </div></li>
+      <li><div>
+        <p class="pub-title"><a href="https://doi.org/10.1016/j.surfin.2026.110901" target="_blank" rel="noopener">Multiscale optoelectronic and materials performance of novel Cs<sub>3</sub>ZnX<sub>3</sub> (X = F, Cl, Br and I) halide perovskites: DFT-guided device simulation and performance analysis</a></p>
+        <p class="pub-authors">Asfia Zaman Khan, Ashraful Alam, <span class="me">Arafat Rahman</span>, Kazi Mazba Kamal, Sandip Sutradhar, Alamgir Kabir</p>
+        <p class="pub-venue"><em>Surfaces and Interfaces</em> <span class="yr">(2026)</span></p>
+        <div class="pub-actions"><a href="https://doi.org/10.1016/j.surfin.2026.110901" target="_blank" rel="noopener">DOI</a></div>
+      </div></li>
+      <li><div>
+        <p class="pub-title"><a href="https://doi.org/10.1039/d6cp00114a" target="_blank" rel="noopener">Strong optical absorption in cubic RaMS<sub>3</sub> chalcogenide perovskites for optoelectronic applications: a first-principles DFT study</a></p>
+        <p class="pub-authors"><span class="me">Arafat Rahman</span>, Alamgir Kabir, Tareq Mahmud</p>
+        <p class="pub-venue"><em>Physical Chemistry Chemical Physics</em> <span class="yr">(2026)</span></p>
+        <div class="pub-actions"><a href="https://doi.org/10.1039/d6cp00114a" target="_blank" rel="noopener">DOI</a></div>
+      </div></li>
+      <li><div>
+        <p class="pub-title"><a href="https://doi.org/10.1039/d5ra05713b" target="_blank" rel="noopener">Semimetallic superconductivity in cubic Nd<sub>3</sub>In: a first-principles insight into indium-based compounds</a></p>
+        <p class="pub-authors"><span class="me">Arafat Rahman</span>, Alamgir Kabir, Tareq Mahmud</p>
+        <p class="pub-venue"><em>RSC Advances</em> <span class="yr">(2025)</span></p>
+        <div class="pub-actions"><a href="https://doi.org/10.1039/d5ra05713b" target="_blank" rel="noopener">DOI</a></div>
+      </div></li>
+      <li><div>
+        <p class="pub-title"><a href="https://doi.org/10.1016/j.micrna.2025.208486" target="_blank" rel="noopener">Influence of Mg doping on growth, structural, morphological, optical, and electrical properties of CuO thin films: experimental and DFT studies</a></p>
+        <p class="pub-authors">Mehnaz Sharmin, I. N. Esha, Tasnima Begum, <span class="me">Arafat Rahman</span>, Kazi Hanium Maria</p>
+        <p class="pub-venue"><em>Micro and Nanostructures</em> <span class="yr">(2025)</span></p>
+        <div class="pub-actions"><a href="https://doi.org/10.1016/j.micrna.2025.208486" target="_blank" rel="noopener">DOI</a></div>
+      </div></li>
+      <li><div>
+        <p class="pub-title"><a href="https://doi.org/10.1038/s41598-024-76812-0" target="_blank" rel="noopener">Computational insights into transition metal-based BaCoX<sub>3</sub> (X = Cl, Br, I) halide perovskites for spintronics, photovoltaics, and renewable energy devices</a></p>
+        <p class="pub-authors"><span class="me">Arafat Rahman</span>, Alamgir Kabir, Tareq Mahmud</p>
+        <p class="pub-venue"><em>Scientific Reports</em> <span class="yr">(2024)</span></p>
+        <div class="pub-actions"><a href="https://doi.org/10.1038/s41598-024-76812-0" target="_blank" rel="noopener">DOI</a><span class="note">Scientific Reports Physics Top 100 of 2024</span></div>
+      </div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Background</span><h2>Experience and Education</h2></div>
+    <div class="two-col">
+      <div>
+        <h3 class="col-title">Positions</h3>
+        <ul class="timeline">
+          <li>
+            <div class="when">Present</div>
+            <div class="what">Lecturer</div>
+            <div class="where">Institute of Natural Sciences, United International University, Dhaka</div>
+            <div class="detail">Teaching undergraduate physics and continuing research in computational condensed matter physics.</div>
+          </li>
+          <li>
+            <div class="when">Aug 2025 – Feb 2026</div>
+            <div class="what">Research Assistant</div>
+            <div class="where">Department of Mathematics and Natural Sciences, North South University, Dhaka</div>
+            <div class="detail">First-principles DFT research; installed and maintained the group's computational stack (VASP, Quantum ESPRESSO, WannierTools, EPW, ALAMODE); trained and mentored junior research assistants.</div>
+          </li>
+          <li>
+            <div class="when">Sep 2024 – Oct 2024</div>
+            <div class="what">Teaching Assistant</div>
+            <div class="where">BRAC University, Dhaka</div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="col-title">Education</h3>
+        <ul class="timeline">
+          <li>
+            <div class="when">Ongoing</div>
+            <div class="what">Master of Science in Physics</div>
+            <div class="where">University of Dhaka</div>
+            <div class="detail">Thesis research on altermagnetic systems.</div>
+          </li>
+          <li>
+            <div class="when">2025</div>
+            <div class="what">Bachelor of Science (Honours) in Physics</div>
+            <div class="where">University of Dhaka</div>
+          </li>
+        </ul>
+        <h3 class="col-title" style="margin-top:32px">Fellowship</h3>
+        <ul class="timeline">
+          <li>
+            <div class="when">2025</div>
+            <div class="what">National Science and Technology (NST) Fellowship</div>
+            <div class="where">Ministry of Science and Technology, Government of Bangladesh</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDENTS -->
+<section id="students">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Mentoring</span><h2>For Prospective Students</h2></div>
+    <div class="prose teach">
+      <p>I welcome motivated undergraduate students at UIU and elsewhere who are interested in computational physics, quantum materials or materials design. Students working with me learn density functional theory, electronic structure calculations, magnon spectra, superconducting transition temperatures, group-theoretical symmetry analysis, Wannier-based topology analysis, and scientific programming on Linux and HPC systems, with the goal of contributing to publishable research.</p>
+      <p>If you are interested, please <a href="mailto:arafatrahman@ins.uiu.ac.bd?subject=Research%20interest">email me</a> with a short note about your background and which of the topics above interests you most.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Contact</span><h2>Get in Touch</h2></div>
+    <div class="contact-grid">
+      <div class="prose">
+        <p>I am happy to discuss research collaborations, computational projects and student supervision. Email is the best way to reach me.</p>
+      </div>
+      <div class="contact-card">
+        <dl>
+          <dt>Email</dt><dd><a href="mailto:arafatrahman@ins.uiu.ac.bd">arafatrahman@ins.uiu.ac.bd</a></dd>
+          <dt>Affiliation</dt><dd>Institute of Natural Sciences<br>United International University</dd>
+          <dt>Address</dt><dd>United City, Madani Avenue, Badda, Dhaka 1212, Bangladesh</dd>
+          <dt>Scholar</dt><dd><a href="https://scholar.google.com/citations?hl=en&amp;user=9EncQKUAAAAJ" target="_blank" rel="noopener">Google Scholar profile</a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> Arafat Rahman</span>
+    <span>Institute of Natural Sciences, United International University</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  try{var t=localStorage.getItem('theme'); if(t) root.setAttribute('data-theme',t);}catch(e){}
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    var next=cur==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+
+  var menu=document.getElementById('menuBtn'), list=document.getElementById('navlist');
+  menu.addEventListener('click',function(){
+    var open=list.classList.toggle('open'); menu.setAttribute('aria-expanded',open);
+  });
+  list.addEventListener('click',function(e){ if(e.target.tagName==='A'){list.classList.remove('open');menu.setAttribute('aria-expanded','false');} });
+
+  var links=[].slice.call(document.querySelectorAll('nav a'));
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+en.target.id);});
+      }
+    });
+  },{rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('section[id]').forEach(function(s){obs.observe(s);});
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
